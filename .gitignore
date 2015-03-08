@@ -1,0 +1,3 @@
+doubanmoive/*.pyc
+doubanmoive/spiders/*.pyc
+douban_data.json
