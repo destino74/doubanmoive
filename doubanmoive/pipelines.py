@@ -67,7 +67,7 @@ class DoPipeline(object):
 
             tx.execute(\
                 "insert into doubanmoive (m_name,m_year,m_score,m_director,m_classification,m_actor) values (%s,%s,%s,%s,%s,%s)",\
-                (item['name'][0],item['year'][0],item['score'][0],item['director'][0],classification,actor))
+                 ("".join(item['name']), "".join(item['year']), "".join(item['score']), "".join(item['director']), classification, actor))
             log.msg("Item stored in db: %s" % item, level=log.DEBUG)
 
     def handle_error(self, e):
