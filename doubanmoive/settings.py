@@ -18,6 +18,7 @@ NEWSPIDER_MODULE = 'doubanmoive.spiders'
 
 ITEM_PIPELINES={
     'doubanmoive.pipelines.DoubanmoivePipeline':400,
+    'doubanmoive.pipelines.DoPipeline':300,
 }
 LOG_LEVEL='DEBUG'
 
